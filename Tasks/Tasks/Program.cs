@@ -104,7 +104,7 @@ namespace Tasks
 
             }
             powerOf2.Sort((x, y) => x - y);
-            return String.Join(", ", powerOf2.Select(x => x.ToString()).ToArray());
+            return powerOf2.Count !=0? String.Join(", ", powerOf2.Select(x => x.ToString()).ToArray()): "NA";
         }
 
         private static string task8()
